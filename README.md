@@ -1,231 +1,390 @@
-﻿# A-4-week-Data-Science-Reboot-Plan-
+﻿# 🎯 12-Week Data Scientist Job Prep Master Plan (6–8 hrs/day)
+
+This plan is designed for **Data Scientist / Data Engineer / ML roles** with **strong math, coding, and cloud expectations**. Follow this strictly and you will be interview-ready.
 
 ---
 
-# ✅ **1. First: The “Core for Data Science” Topics**
+## 🧠 DAILY TIME SPLIT (6–8 HOURS)
 
-These are **must learn** for jobs:
+* **Math + ML** → 2.5 hrs
+* **DSA** → 1.5 hrs
+* **Data Engineering + Azure** → 2.5 hrs
+* **Revision / Notes / Interview Qs** → 0.5–1 hr
 
-### **Linear Algebra (ESSENTIAL)**
+---
 
-* Vectors
-* Matrices
+# 🟩 PHASE 1 — FOUNDATIONS REBOOT (WEEKS 1–4)
+
+Goal: Bring everything back into working memory.
+
+---
+
+## 📘 MATH + ML (Weeks 1–4)
+
+### Week 1–2: Linear Algebra + Core ML
+
+* Vectors, matrices
 * Basis & dimension
-* Projections
-* Eigenvalues / eigenvectors
-* SVD
-* PCA
-* Least squares / regression
+* Norms, projections
+* Eigenvalues & eigenvectors
+* SVD & low-rank approximation
+* PCA (theory + Python)
+* Least squares
+* Linear regression
+* Logistic regression
 
-### **Calculus (ESSENTIAL)**
+### Week 3: Calculus + Optimization
 
-* Derivatives
-* Partial derivatives
+* Derivatives & partial derivatives
 * Chain rule
 * Gradients
-* Optimization basics
-
-### **Probability & Statistics (ESSENTIAL)**
-
-* Bayes
-* Random variables
-* Expectation
-* Variance
-* Distributions
-* Covariance
-* Joint distributions
-
-### **Optimization (ESSENTIAL for ML)**
-
-* Convex functions
+* Convex sets & functions
 * Gradient descent
-* Constraints
 * Newton’s method
+* Optimization in Python
 
-### **SVM (high-value interview topic)**
+### Week 4: Probability + SVM
 
-* Hard margin
-* Soft margin
-* Duality
-* Kernels
-
----
-
-# 🔥 **2. Mapping Your Lecture List → Priority Levels**
-
-I’ve categorized every lecture into:
-
-🟢 **Must-do** (essential for ML + DS jobs)
-🟡 **Should-do** (very useful but not mandatory)
-🔵 **Optional** (deep math, rarely asked in DS interviews)
+* Probability basics
+* Random variables
+* Expectation & variance
+* Discrete & continuous distributions
+* Joint distributions & covariance
+* Bayes theorem
+* SVM: hard margin, soft margin, duality
+* SVM in Python
 
 ---
 
-# 🟢 **MUST-DO LECTURES**
+## 🧠 DSA (Weeks 1–4)
 
-These are your core ML math foundation.
+Target: ~120 problems
 
-### **Linear Algebra**
+### Topic Order
 
-* 01: Vectors
-* 02: Basics of Matrix Algebra
-* 05: Basis & Dimension
-* 07: Norms and Spaces
-* 08: Orthogonal Projection
-* 09: Eigenvalues & Eigenvectors
-* 12: Singular Value Decomposition
-* 13: SVD: Properties & Applications
-* 14: Low-Rank Approximation
-* 15: Python implementation of SVD
-* 16 & 17 & 18: PCA (I, derivation, implementation)
-* 21: Least Squares Approximation
-* 22 & 23: Linear & Multiple Regression
-* 24 & 25: Logistic Regression
-* 26: Classification Metrics
-* 27: Gram-Schmidt Process
+1. Arrays
+2. Strings
+3. HashMaps
+4. Two pointers
+5. Sliding window
+6. Stack & Queue
+7. Binary Search
+8. Trees
+9. Heap
 
----
+### Daily Routine
 
-### **Calculus**
-
-* 31–36: Basic concepts of calculus + Python
-* (You can skip 33–35 if time is short)
+* 2 problems/day
+* 20–25 min/problem
+* Focus on explanation + complexity
 
 ---
 
-### **Optimization**
+## ☁️ DATA ENGINEERING + AZURE (Weeks 1–4)
 
-* 37: Convex sets & functions
-* 38–39: Properties of convex functions
-* 40: Intro to optimization
-* 41: Unconstrained optimization
-* 44: Steepest descent
-* 45: Newton & penalty functions
-* 46: Optimization in Python
+### Week 1
 
----
+* SQL (joins, window functions)
+* Azure Blob Storage
+* ADLS Gen2
 
-### **Probability (most essential part for DS interviews)**
+### Week 2
 
-* 48: Review of Probability
-* 49: Bayes theorem & random variables
-* 50: Expectation & Variance
-* 51: Discrete distributions
-* 52: Continuous distributions
-* 53: Joint distributions & covariance
+* Azure Data Factory (pipelines)
+* Batch ingestion
+* Incremental loads
 
----
+### Week 3
 
-### **SVM**
+* Azure Databricks
+* PySpark basics
+* Transformations
 
-* 54–58: All SVM lectures
-* SVM Python I & II
+### Week 4
 
-These give you **full DS interview coverage**.
+* Azure SQL / Synapse
+* Data modeling
+* End-to-end batch ETL
+
+📌 **Deliverable:** 1 complete ETL pipeline
 
 ---
 
-# 🟡 **SHOULD-DO (Useful but not mandatory)**
+# 🟦 PHASE 2 — PROJECTS & DEPTH (WEEKS 5–8)
 
-* 03 & 04: Vector spaces & subspaces (optional depth)
-* 06: Linear transformations
-* 10: Special matrices
-* 11: Spectral decomposition
-* 19: LDA
-* 20: LDA Python
-* 28: Polar decomposition
+Goal: Become interview-dangerous.
 
 ---
 
-# 🔵 **OPTIONAL (Deep math, not required unless you love theory)**
+## 🚀 PROJECT 1: BATCH DATA PIPELINE (Azure)
 
-* 29 & 30: Minimal polynomial + Jordan form (rarely used)
-* 42–43: Constrained optimization (nice but not essential)
+**Flow:**
+CSV → Blob → ADF → Databricks → Azure SQL
 
----
+### 📅 Daily Task Breakdown (10 Days)
 
-# 🎯 **3. Your Optimized 30-Day Study Plan**
+**Day 1:**
 
-Assuming **1.5–2 hours/day**.
+* Define business use-case & dataset
+* Design architecture diagram
+* Create Azure resource group
 
----
+**Day 2:**
 
-## **WEEK 1 — Linear Algebra Refresh**
+* Create Azure Blob Storage
+* Upload raw CSV data
+* Folder structure (raw/processed)
 
-Day 1 → Lectures 1, 2
-Day 2 → 5, 7
-Day 3 → 8, 9
-Day 4 → 12, 13
-Day 5 → 14, 15
-Day 6 → PCA I & II
-Day 7 → PCA Implementation + Least Squares
+**Day 3:**
 
----
+* Create Azure Data Factory
+* Linked services (Blob)
+* Simple ingestion pipeline
 
-## **WEEK 2 — ML Foundations**
+**Day 4:**
 
-Day 8 → Linear Regression I
-Day 9 → Linear Regression II
-Day 10 → Logistic Regression I
-Day 11 → Logistic Regression II
-Day 12 → Classification Metrics
-Day 13 → Gram-Schmidt
-Day 14 → LDA (optional)
+* Parameterized ADF pipeline
+* Schedule trigger
 
----
+**Day 5:**
 
-## **WEEK 3 — Calculus + Optimization**
+* Setup Azure Databricks workspace
+* Mount Blob storage
 
-Day 15 → Calculus I & II
-Day 16 → Calculus III & IV
-Day 17 → Calculus V + Python
-Day 18 → Convex sets & functions
-Day 19 → Optimization basics + unconstrained
-Day 20 → Steepest descent & Newton
-Day 21 → Optimization in Python
+**Day 6:**
 
----
+* PySpark transformations
+* Data cleaning & validation
 
-## **WEEK 4 — Probability + SVM**
+**Day 7:**
 
-Day 22 → Probability review + Bayes
-Day 23 → Discrete + Continuous distributions
-Day 24 → Expectation, variance
-Day 25 → Joint distributions & covariance
-Day 26 → SVM basics
-Day 27 → Hard margin + soft margin
-Day 28 → Duality + optimization
-Day 29 → SVM Python I
-Day 30 → SVM Python II + final revision
+* Implement incremental load logic
+* Partitioning strategy
 
----
+**Day 8:**
 
-# 🧠 How to Study These Lectures Efficiently
+* Load data into Azure SQL / Synapse
+* Create tables & indexes
 
-For each lecture:
+**Day 9:**
 
-### **Step 1: Watch 20–30 mins at 1.25× speed**
+* Add logging & basic data quality checks
+* Failure handling
 
-This builds the intuition.
+**Day 10:**
 
-### **Step 2: Ask me:**
-
-* “Summarize this lecture in simple points”
-* “Give me practice problems”
-* “Explain eigenvalues using intuition only”
-* “Give me DS interview questions for SVD”
-* “Make me revise PCA in 5 minutes”
-
-### **Step 3: Solve 5 small coding tasks**
-
-(sklearn, numpy, pandas)
-
-### **Step 4: End of day — 5-minute recap**
-
-Ask me:
-➡️ “Ask me 10 questions from what I learned today.”
+* Final testing
+* README + architecture diagram
+* Cost & scaling discussion
 
 ---
 
-Video link : https://www.youtube.com/playlist?list=PLLy_2iUCG87D1CXFxE-SxCFZUiJzQ3IvE
+## 🚀 PROJECT 2: ML PIPELINE (Azure ML)
 
+**Flow:**
+Data → Feature Engineering → Training → Evaluation → Deployment
+
+### 📅 Daily Task Breakdown (10 Days)
+
+**Day 1:**
+
+* Define ML problem & dataset
+* Select evaluation metrics
+
+**Day 2:**
+
+* Setup Azure ML workspace
+* Upload dataset
+
+**Day 3:**
+
+* Exploratory Data Analysis (EDA)
+* Feature selection
+
+**Day 4:**
+
+* Feature engineering pipeline
+
+**Day 5:**
+
+* Model training (baseline)
+
+**Day 6:**
+
+* Hyperparameter tuning
+
+**Day 7:**
+
+* Model evaluation & comparison
+
+**Day 8:**
+
+* Register best model
+
+**Day 9:**
+
+* Deploy model as endpoint
+* Test inference
+
+**Day 10:**
+
+* Monitoring & retraining strategy
+* README + architecture diagram
+
+---
+
+## 🧠 DSA (Weeks 5–8)
+
+* Medium-level problems
+* Emphasis on clean code
+* Verbal explanation practice
+
+---
+
+# 🟥 PHASE 3 — INTERVIEW MODE (WEEKS 9–12)
+
+Goal: Convert prep → offers.
+
+---
+
+## 🎤 MOCK INTERVIEWS (Daily)
+
+### Topics
+
+* ML theory & math intuition
+* Probability questions
+* SQL queries
+* DSA explanations
+* ML system design
+* Data pipeline design
+
+---
+
+## 📚 MOCK INTERVIEW QUESTION BANK
+
+### 🔢 Mathematics & ML (Conceptual)
+
+1. Explain bias–variance tradeoff with an example.
+2. Why does PCA use eigenvectors of the covariance matrix?
+3. Difference between SVD and eigen decomposition.
+4. Why is logistic regression a linear model?
+5. What assumptions does linear regression make?
+6. How does regularization affect the loss function?
+7. Explain gradient descent intuitively.
+8. Why is convexity important in optimization?
+9. What happens if features are highly correlated?
+10. When would you prefer L1 over L2 regularization?
+
+### 📊 Probability & Statistics
+
+1. Explain Bayes’ theorem with a real example.
+2. What is a p-value? Common misinterpretations?
+3. Difference between variance and standard deviation.
+4. What is the Central Limit Theorem?
+5. Explain covariance vs correlation.
+6. When do you use Poisson distribution?
+7. What is expectation?
+8. Explain joint and marginal distributions.
+9. What is data leakage?
+10. How would you design an A/B test?
+
+### 🧠 DSA / Coding (Explain-first)
+
+1. Two-sum problem — explain optimal solution.
+2. Sliding window vs two pointers.
+3. Time vs space complexity trade-offs.
+4. When would you use a heap?
+5. Explain recursion with base case.
+6. Detect cycle in linked list.
+7. Binary search edge cases.
+8. Why hash maps are O(1) on average?
+
+### 🗄️ SQL & Data Handling
+
+1. Difference between INNER, LEFT, RIGHT joins.
+2. Window functions vs group by.
+3. Write SQL to get 2nd highest salary.
+4. How do you handle duplicates?
+5. Explain indexing.
+6. How do you optimize slow queries?
+7. What is normalization vs denormalization?
+
+### ☁️ Data Engineering & Azure
+
+1. Explain your Azure ETL pipeline end-to-end.
+2. Difference between Blob Storage and ADLS Gen2.
+3. What is Azure Data Factory used for?
+4. Batch vs streaming pipelines.
+5. How do you handle incremental loads?
+6. How do you ensure data quality?
+7. Cost optimization strategies in Azure.
+8. What happens if Databricks job fails?
+9. How would you scale your pipeline?
+10. Security considerations in Azure data pipelines.
+
+### 🤖 ML Systems & Design
+
+1. Design an ML system for churn prediction.
+2. How do you deploy and monitor ML models?
+3. Model retraining strategies.
+4. Online vs offline inference.
+5. Feature store — why is it needed?
+
+---
+
+### 🎯 How to Practice Mock Interviews
+
+* Pick **10–15 questions/day**
+* Answer aloud
+* Ask GPT to critique your answer
+* Rewrite in STAR format where applicable
+
+This question bank is sufficient for **most DS / DE interviews**.
+
+---
+
+## 📄 RESUME & LINKEDIN
+
+### Resume Must-Haves
+
+* End-to-end ownership
+* Azure stack clearly listed
+* Quantified impact
+
+### LinkedIn
+
+* Weekly posts on:
+
+  * ML concepts
+  * Azure projects
+  * Learnings
+
+---
+
+# 🧾 DAILY CHECKLIST (USE EVERY DAY)
+
+* ⬜ Math concept revised
+* ⬜ 2 DSA problems solved
+* ⬜ Azure work done
+* ⬜ Notes updated
+* ⬜ 5 interview questions practiced
+
+---
+
+# 🧠 HOW TO USE GPT DAILY
+
+* "Explain this concept intuitively"
+* "Ask me interview questions"
+* "Optimize my solution"
+* "Mock interview for Data Scientist role"
+
+---
+
+# ✅ FINAL GOAL (END OF 12 WEEKS)
+
+* Strong ML math intuition
+* 150–180 DSA problems
+* 2–3 solid Azure projects
+* Interview confidence
+
+👉 Follow this plan strictly — it works.
